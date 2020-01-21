@@ -52,12 +52,12 @@ ln -s $dir/zathura/zathurarc ~/.config/zathura/zathurarc
 # fi
 # echo -e "\n--> Reloading Tmux"
 # tmux source ~/.tmux.conf
-# 
-# echo -e "\n--> Installing Plugins\n"
-# source $dir/update.sh
-# 
-# if [ "$1" == "-d" ] 
-# then
-#     echo -e "\n--> Deleting old dotfiles"
-#     rm ~/.bashrc.old ~/.zshrc.old ~/.vimrc.old ~/.vimextras.old ~/.tmux.conf.old  ~/.config/ranger/rc.conf.old ~/.config/termite/config.old -rf
-# fi
+ 
+echo -e "\n--> Installing Plugins\n"
+source $dir/update.sh
+
+if [ "$1" == "-d" ] 
+then
+    echo -e "\n--> Deleting old dotfiles"
+    rm ~/.bashrc.old ~/.bash_profile.old ~/.profile.old ~/.zshrc.old ~/.vimrc.old ~/.vimextras.old ~/.tmux.conf.old  ~/.config/ranger/rc.conf.old ~/.config/termite/config.old -rf
+fi
