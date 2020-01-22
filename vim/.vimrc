@@ -54,7 +54,7 @@ filetype indent on
 set wildmenu
 
 " redraw the screen only when need to
-set lazyredraw
+" set lazyredraw
 
 " highlight matching [{()}]
 set showmatch
