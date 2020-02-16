@@ -51,6 +51,8 @@ set cursorline
 filetype indent on
 
 " Visual autocomplete for command menu
+set wildignorecase
+set wildmode=longest:full
 set wildmenu
 
 " redraw the screen only when need to
@@ -65,7 +67,8 @@ set scrolloff=15
 " Enable autoindent
 set autoindent
 
-
+" Mouse support
+set mouse=a
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Searching
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
