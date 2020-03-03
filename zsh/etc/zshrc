@@ -45,6 +45,8 @@ zstyle ':vcs_info:*' enable git
 
 # Aliases and Functions
 
+alias sudo='sudo '
+
 alias ls='ls -hN --color=auto --group-directories-first'
 alias sl='ls -hN --color=auto --group-directories-first'
 alias ll='ls --color=auto -l --group-directories-first'
@@ -96,6 +98,6 @@ alias gpull='git pull --recurse-submodules'
 alias gclone='git clone'
 alias gpush='git push'
 
-alias zshreloaduser='source ~/.zshrc'
-alias zshreload='source ~/.zshrc'
+alias zshreloaduser='source ~/.config/zsh/.zshrc'
+alias zshreload='source /etc/zsh/zshrc'
 
