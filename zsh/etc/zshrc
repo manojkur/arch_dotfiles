@@ -1,0 +1,101 @@
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored _approximate
+zstyle ':completion:*' expand prefix suffix
+zstyle ':completion:*' file-sort name
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' ignore-parents parent pwd
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-suffixes true
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=**'
+zstyle ':completion:*' preserve-prefix '//[^/]##/'
+zstyle ':completion:*' use-compctl false
+zstyle ':completion:*' verbose true
+zstyle :compinstall filename '/home/kurapam/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd
+unsetopt beep
+bindkey -v
+# End of lines configured by zsh-newuser-install
+
+# Prompt
+
+autoload -Uz promptinit
+promptinit
+
+PROMPT='%B%F{green}[%F{red}%(?..%? )%(!.%F{red}root@.%F{cyan}%n@)%F{green}%2~]%f%b '
+
+# Add Git Info to Right Prompt
+
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=\$vcs_info_msg_0_
+zstyle ':vcs_info:git:*' formats '%F{green}(%b)%r%f'
+zstyle ':vcs_info:*' enable git
+
+# Aliases and Functions
+
+alias ls='ls -hN --color=auto --group-directories-first'
+alias sl='ls -hN --color=auto --group-directories-first'
+alias ll='ls --color=auto -l --group-directories-first'
+alias la='ls --color=auto -la --group-directories-first'
+
+if command -v tree > /dev/null 2>&1; then
+    alias diff='tree -CF'
+fi
+
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias .2='cd ../../'
+alias .3='cd ../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../../'
+
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+if command -v colordiff > /dev/null 2>&1; then
+    alias diff='colordiff -Naur'
+else
+    alias diff='diff -Nuar'
+fi
+
+alias ping='ping -c 5'
+alias fastping='ping -c 100 -s.2'
+
+alias v='vim'
+alias vi='vim'
+
+alias r='ranger'
+
+alias pm='sudo pacman'
+
+alias ka='killall'
+
+alias gco='git checkout'
+alias gadd='git add .'
+alias gcom='git commit -m'
+alias gundo='git reset HEAD~1'
+alias gs='git status'
+alias glog='git log'
+alias greset1='git reset HEAD~1'
+alias gdiff='git diff'
+alias gpull='git pull --recurse-submodules'
+alias gclone='git clone'
+alias gpush='git push'
+
+alias zshreloaduser='source ~/.zshrc'
+alias zshreload='source ~/.zshrc'
+
