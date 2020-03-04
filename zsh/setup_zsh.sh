@@ -35,8 +35,6 @@ sudo mv $rootdir/.zshenv $rootdir/.zshenv.old > /dev/null 2>&1
 sudo mv $rootdir/.zshrc $rootdir/.zshrc.old > /dev/null 2>&1
 
 echo -e "--> Linking files to repository"
-echo -e "--> sysdir $sysdir"
-echo -e "--> userdir $userdir"
 sudo ln -s $PWD/etc/zlogin $sysdir/zlogin
 sudo ln -s $PWD/etc/zlogout $sysdir/zlogout
 sudo ln -s $PWD/etc/zprofile $sysdir/zprofile

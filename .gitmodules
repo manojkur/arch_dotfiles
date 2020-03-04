@@ -1,3 +1,12 @@
 [submodule "backgrounds"]
 	path = backgrounds
 	url = https://github.com/manojkur/backgrounds
+[submodule "suckless/st/st"]
+	path = suckless/st/st
+	url = https://github.com/manojkur/st
+[submodule "suckless/dwm/dwm"]
+	path = suckless/dwm/dwm
+	url = https://github.com/manojkur/dwm
+[submodule "suckless/dmenu/dmenu"]
+	path = suckless/dmenu/dmenu
+	url = https://github.com/manojkur/dmenu
