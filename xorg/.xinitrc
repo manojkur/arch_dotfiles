@@ -33,7 +33,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # setup background changing systemd timer
-exec --on-startup-id systemd-run --on-calendar='*:0/5' --user --unit background_wallpaper.service -- /usr/bin/feh --no-fehbg --bg-fill --randomize -r ~/dotfiles/backgrounds/backgrounds/
+# exec --on-startup-id systemd-run --on-calendar='*:0/5' --user --unit background_wallpaper.service -- /usr/bin/feh --no-fehbg --bg-fill --randomize -r ~/dotfiles/backgrounds/backgrounds/
 
-# start i3 wm
-exec i3
+# start dwm
+while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
+do
+    sleep 1
+done &
+exec dwm
