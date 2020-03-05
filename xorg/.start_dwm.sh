@@ -15,4 +15,8 @@ do
 #        /usr/bin/feh --no-fehbg --bg-fill --randomize -recursive ~/dotfiles/backgrounds/backgrounds/
 #    fi
 done &
+while /usr/bin/feh --no-fehbg --bg-fill --randomize -recursive ~/dotfiles/backgrounds/backgrounds/
+do
+    sleep 300 
+done &
 exec dwm
