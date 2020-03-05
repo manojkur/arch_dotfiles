@@ -19,4 +19,5 @@ while /usr/bin/feh --no-fehbg --bg-fill --randomize -recursive ~/dotfiles/backgr
 do
     sleep 300 
 done &
+xcompmgr &
 exec dwm
