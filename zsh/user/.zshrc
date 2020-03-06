@@ -9,7 +9,6 @@ source /usr/share/zsh/share/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle colored-man-pages
-antigen bundle colorize
 antigen bundle cp
 
 antigen bundle zsh-users/zsh-syntax-highlighting
