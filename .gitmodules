@@ -10,3 +10,6 @@
 [submodule "suckless/dmenu/dmenu"]
 	path = suckless/dmenu/dmenu
 	url = https://github.com/manojkur/dmenu
+[submodule "packages/yay"]
+	path = packages/yay
+	url = https://aur.archlinux.org/yay.git
