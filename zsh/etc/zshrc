@@ -23,25 +23,25 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt autocd
 unsetopt beep
-bindkey -v
+bindkey -e
 # End of lines configured by zsh-newuser-install
 
 # Prompt
 
-autoload -Uz promptinit
-promptinit
-
-PROMPT='%B%F{green}[%F{red}%(?..%? )%(!.%F{red}root@.%F{cyan}%n@)%F{green}%2~]%f%b '
+# autoload -Uz promptinit
+# promptinit
+# 
+# PROMPT='%B%F{green}[%F{red}%(?..%? )%(!.%F{red}root@.%F{cyan}%n@)%F{green}%2~]%f%b '
 
 # Add Git Info to Right Prompt
 
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-RPROMPT=\$vcs_info_msg_0_
-zstyle ':vcs_info:git:*' formats '%F{green}(%b)%r%f'
-zstyle ':vcs_info:*' enable git
+# autoload -Uz vcs_info
+# precmd_vcs_info() { vcs_info }
+# precmd_functions+=( precmd_vcs_info )
+# setopt prompt_subst
+# RPROMPT=\$vcs_info_msg_0_
+# zstyle ':vcs_info:git:*' formats '%F{green}(%b)%r%f'
+# zstyle ':vcs_info:*' enable git
 
 # Aliases and Functions
 
