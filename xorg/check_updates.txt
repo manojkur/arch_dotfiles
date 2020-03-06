@@ -1,0 +1,3 @@
+#!/bin/bash
+touch updates.txt
+checkupdates | wc -l > updates.txt
