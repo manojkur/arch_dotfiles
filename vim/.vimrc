@@ -13,10 +13,45 @@
 let mapleader=","
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
+" Plugin 'scrooloose/syntastic'
+" Plugin 'severin-lemaignan/vim-minimap'
+" Plugin 'tmux-plugins/vim-tmux-focus-events'
+" Plugin 'francoiscabrol/ranger.vim'
+" Plugin 'lervag/vimtex'
+" Plugin 'honza/vim-snippets'
+" Plugin 'SirVer/ultisnips'
+" Plugin 'KeitaNakamura/tex-conceal.vim'
+
+call vundle#end()
+filetype plugin indent on
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colors
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set Color Theme
-colorscheme elflord
+colorscheme elflord 
+let g:airline_theme='deus'
+set laststatus=2
+set encoding=utf-8
+let g:airline_powerline_fonts = 1
 
 " Enable syntax processing
 syntax enable
@@ -46,9 +81,6 @@ set showcmd
 
 " Highlight current line
 set cursorline
-
-" Load filetype-specific indent files
-filetype indent on
 
 " Visual autocomplete for command menu
 set wildignorecase

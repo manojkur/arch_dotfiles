@@ -16,6 +16,14 @@ mv $userdir/.vimrc $userdir/.vimrc.old > /dev/null 2>&1
 echo -e "--> Linking files to repository"
 ln -s $PWD/.vimrc $userdir/.vimrc
 
+VUNDLE=~/.vim/bundle/Vundle.vim
+if [ -d "$VUNDLE" ]; then
+    echo -e "\n--> Vundle already installed. Skiping..."
+else 
+    echo -e "\n--> Installing Vundle (Vim plugin manager)\n"
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim | sed "s/^/  /g"
+fi
+
 if [ "$1" == "-d" ]
 then
     echo -e "--> Deleting old files"
