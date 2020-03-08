@@ -43,7 +43,6 @@ This will keep the old configuration files around with a '.old' suffix
         - Check installed AUR packages with `yay -Qm`
 * Install xorg
     - TODO: setup_xinit.sh
-    - TODO: Move contents of .setup_dwm.sh to dwm autostart
     - TODO: Setup keyboard modifications
         - Change Caps lock to ESC
     - TODO: Either automatically setup displays or be able to maintain different configurations for each computer
@@ -87,8 +86,6 @@ This will keep the old configuration files around with a '.old' suffix
         - Shortcut to launch Firefox
         - Shortcut to change wallpaper
         - Patches to possibly apply:
-            - autostart
-                - Move contents of .setup_dwm.sh from xorg to here
             - center?
             - noborder?
             - Find patches for different screen layouts
