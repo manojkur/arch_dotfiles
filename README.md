@@ -9,13 +9,20 @@ This will keep the old configuration files around with a '.old' suffix
 **Options:**  
 -d -- Don't keep '.old' files around; i.e. completely overwrite
 
-### Sets up config for:
-* zsh
-* vim
-* tmux
+### Sets up:
+* TODO: packages
+* xorg
+* suckless
+    - st
+    - dmenu
+    - dwm
 * ranger
-* termite
+* vim
+* zsh
+* tmux
 * zathura
+* TODO: LaTex
+* TODO: directory structure
 
 ### End Goal for setup.sh:
 * Install packages
