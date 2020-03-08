@@ -41,5 +41,5 @@ fi
 # do
 #     sleep 1
 # done &
-# exec dwm
-exec ~/.start_dwm.sh
+exec dwm
+# exec ~/.start_dwm.sh
