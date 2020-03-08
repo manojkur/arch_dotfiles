@@ -28,6 +28,8 @@ This will keep the old configuration files around with a '.old' suffix
 * Install packages
     - TODO: setup_packages.sh
         - Check to make sure system is running Arch Linux
+        - Run `pacman -Ss`
+        - Run `pacman -Syu`
     - Install pacman packages
         - TODO: setup_pacman.sh
         - Check installed pacman packages with `pacman -Qe`
