@@ -47,6 +47,7 @@ This will keep the old configuration files around with a '.old' suffix
     - TODO: Setup keyboard modifications
         - Change Caps lock to ESC
     - TODO: Either automatically setup displays or be able to maintain different configurations for each computer
+    - TODO: Setup default programs using xdg
 * Suckless
     - TODO: install_suckless.sh
     - Install st
