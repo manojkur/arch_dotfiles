@@ -43,8 +43,6 @@ This will keep the old configuration files around with a '.old' suffix
         - Check installed AUR packages with `yay -Qm`
 * Install xorg
     - TODO: setup_xinit.sh
-    - TODO: Setup keyboard modifications
-        - Change Caps lock to ESC
     - TODO: Either automatically setup displays or be able to maintain different configurations for each computer
     - TODO: Setup default programs using xdg
 * Suckless
