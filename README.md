@@ -79,9 +79,6 @@ This will keep the old configuration files around with a '.old' suffix
             - git pull submodule
         - Add Makefile outputs to gitignore
         - Check out [dwm.suckless.org/customisation](https://dwm.suckless.org/customisation)
-        - Install display manager
-            - Checkout slock at [tools.suckless.org/slock](https://tools.suckless.org/slock)
-        - Shortcut to launch Firefox
         - Shortcut to change wallpaper
         - Patches to possibly apply:
             - center?
