@@ -1,15 +1,15 @@
 [submodule "backgrounds"]
 	path = backgrounds
-	url = https://github.com/manojkur/backgrounds
+	url = git@github.com:manojkur/backgrounds.git
 [submodule "suckless/st/st"]
 	path = suckless/st/st
-	url = https://github.com/manojkur/st
+	url = git@github.com:manojkur/st.git
 [submodule "suckless/dwm/dwm"]
 	path = suckless/dwm/dwm
-	url = https://github.com/manojkur/dwm
+	url = git@github.com:manojkur/dwm.git
 [submodule "suckless/dmenu/dmenu"]
 	path = suckless/dmenu/dmenu
-	url = https://github.com/manojkur/dmenu
+	url = git@github.com:manojkur/dmenu.git
 [submodule "packages/yay"]
 	path = packages/yay
 	url = https://aur.archlinux.org/yay.git
