@@ -12,4 +12,8 @@
 	url = git@github.com:manojkur/dmenu.git
 [submodule "packages/yay"]
 	path = packages/yay
-	url = https://aur.archlinux.org/yay.git
+	url = https://aur.archlinux.org/yay-bin.git
+
+[submodule "packages/paru"]
+	path = packages/paru
+	url = https://aur.archlinux.org/paru.git
