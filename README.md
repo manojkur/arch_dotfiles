@@ -1,4 +1,4 @@
-# dotfiles
+# arch_dotfiles
 ## Automatic Setup
 To automatically setup the dotfiles run from anywhere:
 ```
